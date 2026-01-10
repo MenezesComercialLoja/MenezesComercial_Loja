@@ -53,10 +53,12 @@ header nav a:hover {
 }
 
 .logo img {
-    width: 70%;
+    width: 100%;
     max-width: 350px;
-    height: auto;
-    object-fit: contain;
+    height: auto;      /* NÃO força altura */
+    object-fit: contain; /* Mantém proporção SEM cortar */
+    display: block;
+    margin: 0 auto;
 }
 
 /* Texto abaixo da logo */
