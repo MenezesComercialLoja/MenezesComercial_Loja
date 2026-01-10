@@ -50,6 +50,8 @@ header nav a:hover {
     padding: 20px 0;
     text-align: center;
     border-bottom: 3px solid #eee;
+    height: auto !important;
+    min-height: auto !important;
 }
 
 .logo img {
