@@ -64,12 +64,20 @@ nav a:hover {
 
 .carousel-slide img {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0;
+    opacity: 0;               /* todas invisíveis */
     transition: opacity 1s ease-in-out;
+    pointer-events: none;     /* opcional, evita clique */
 }
+
+.carousel-slide img.active {
+    opacity: 1;               /* só a imagem ativa fica visível */
+}
+
 
 
 @keyframes slide {
