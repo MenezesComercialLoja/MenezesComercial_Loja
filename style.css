@@ -31,6 +31,11 @@ header {
     object-fit: contain;
 }
 
+.logo img {
+    height: auto;
+    max-height: 120px;
+}
+
 header h1 {
     font-size: 26px;
     flex: 1;
