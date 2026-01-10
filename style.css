@@ -31,17 +31,17 @@ header nav a:hover {
     text-decoration: underline;
 }
 
-.hero {
+.logo {
     position: relative;
     height: 300px;
     overflow: hidden;
 }
-.hero img {
+.logo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.hero-text {
+.logo-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -50,7 +50,7 @@ header nav a:hover {
     text-shadow: 1px 1px 8px black;
     text-align: center;
 }
-.hero button {
+.logo button {
     margin-top: 10px;
     padding: 10px 20px;
     background: #ff8800;
@@ -59,7 +59,7 @@ header nav a:hover {
     cursor: pointer;
     font-size: 16px;
 }
-.hero button:hover {
+.logo button:hover {
     background: #e66f00;
 }
 
