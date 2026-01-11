@@ -1,0 +1,20 @@
+[
+  {
+    "nome": "Produto Exemplo 1",
+    "preco": "R$ 49,90",
+    "img": "img/produto1.jpg",
+    "descricao": "Descrição curta do produto."
+  },
+  {
+    "nome": "Produto Exemplo 2",
+    "preco": "R$ 79,90",
+    "img": "img/produto2.jpg",
+    "descricao": "Outro produto massa chegando em breve."
+  },
+  {
+    "nome": "Produto Exemplo 3",
+    "preco": "R$ 29,90",
+    "img": "img/produto3.jpg",
+    "descricao": "Ótimo custo-benefício!"
+  }
+]
