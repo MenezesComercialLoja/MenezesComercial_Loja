@@ -6,23 +6,7 @@
     <title>Contato | Menez Shopping</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    <script>
-document.getElementById("whatsForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    let nome = document.getElementById("nome").value;
-    let email = document.getElementById("email").value;
-    let mensagem = document.getElementById("mensagem").value;
-
-    // Altere para seu número com DDD (somente números)
-    let telefone = "5583987486260"; 
-
-    let texto = `Olá!%0AMeu nome é ${nome}.%0AEmail: ${email}.%0A%0A${mensagem}`;
-    let url = `https://wa.me/${telefone}?text=${texto}`;
-
-    window.open(url, "_blank");
-});
-</script>
+    
 
 <body>
  <header>
@@ -62,5 +46,23 @@ document.getElementById("whatsForm").addEventListener("submit", function(e) {
     <p>&copy; 2026 menezshopping.com — Menez Shopping</p>
 </footer>
 
+<script>
+document.getElementById("whatsForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let nome = document.getElementById("nome").value;
+    let email = document.getElementById("email").value;
+    let mensagem = document.getElementById("mensagem").value;
+
+    // Altere para seu número com DDD (somente números)
+    let telefone = "5583987486260"; 
+
+    let texto = `Olá!%0AMeu nome é ${nome}.%0AEmail: ${email}.%0A%0A${mensagem}`;
+    let url = `https://wa.me/${telefone}?text=${texto}`;
+
+    window.open(url, "_blank");
+});
+</script>
+    
 </body>
 </html>
