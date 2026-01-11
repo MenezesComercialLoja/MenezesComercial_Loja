@@ -6,6 +6,24 @@
     <title>Contato | Menez Shopping</title>
     <link rel="stylesheet" href="style.css">
 </head>
+    <script>
+document.getElementById("whatsForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let nome = document.getElementById("nome").value;
+    let email = document.getElementById("email").value;
+    let mensagem = document.getElementById("mensagem").value;
+
+    // Altere para seu número com DDD (somente números)
+    let telefone = "5583987486260"; 
+
+    let texto = `Olá!%0AMeu nome é ${nome}.%0AEmail: ${email}.%0A%0A${mensagem}`;
+    let url = `https://wa.me/${telefone}?text=${texto}`;
+
+    window.open(url, "_blank");
+});
+</script>
+
 <body>
  <header>
         <div class="container header-flex">
@@ -25,18 +43,19 @@
     <h2>Fale Conosco</h2>
     <p>Tem interesse em saber mais sobre a loja ou quer vender conosco?</p>
 
-    <form class="contato-form">
+    <form class="contato-form" id="whatsForm">
         <label>Seu nome</label>
-        <input type="text" placeholder="Seu nome">
+        <input type="text" id="nome" placeholder="Seu nome">
 
         <label>E-mail</label>
-        <input type="email" placeholder="seuemail@email.com">
+        <input type="email" id="email" placeholder="seuemail@email.com">
 
         <label>Mensagem</label>
-        <textarea rows="5" placeholder="Como podemos te ajudar?"></textarea>
+        <textarea rows="5" id="mensagem" placeholder="Como podemos te ajudar?"></textarea>
 
         <button type="submit">Enviar</button>
     </form>
+
 </main>
 
 <footer>
