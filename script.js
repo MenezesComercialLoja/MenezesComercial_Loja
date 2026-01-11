@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     showSlide(currentIndex);
     setInterval(nextSlide, 4000);
 });
-fetch("produtos.json")
+fetch("https://raw.githubusercontent.com/MenezesComercialLoja/MenezesComercialLoja/main/produtos.json")
   .then(response => response.json())
   .then(produtos => {
     const container = document.getElementById("produtos-container");
