@@ -43,3 +43,5 @@ function comprar(produto) {
   const mensagem = encodeURIComponent(`Olá! Tenho interesse no produto: ${produto}`);
   window.open(`https://wa.me/${numero}?text=${mensagem}`, "_blank");
 }
+
+console.log("Script carregado!");
