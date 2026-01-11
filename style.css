@@ -167,3 +167,36 @@ footer {
         height: 220px;
     }
 }
+/* ===== FORMULÁRIO DE CONTATO ===== */
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.contato-form input,
+.contato-form textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contato-form button {
+    background: #ff8800;
+    border: none;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.contato-form button:hover {
+    background: #e66f00;
+}
+
